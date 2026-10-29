@@ -5,8 +5,8 @@ import { WhatsAppButton } from "./ui/WhatsAppButton";
 function MonitoringVisual() {
   const alerts = [
     { icon: TriangleAlert, tone: "text-brand-800 bg-gold-soft", title: "Pedido parecido detectado", meta: "Revista do INPI · Classe 35" },
-    { icon: Check, tone: "text-brand-600 bg-brand-100", title: "Oposição protocolada", meta: "Dentro do prazo legal" },
-    { icon: Bell, tone: "text-accent bg-brand-600/20", title: "Renovação em 9 meses", meta: "Lembrete automático" },
+    { icon: Check, tone: "text-jade-700 bg-jade-50", title: "Oposição protocolada", meta: "Dentro do prazo legal" },
+    { icon: Bell, tone: "text-petrol-700 bg-petrol-50", title: "Renovação em 9 meses", meta: "Lembrete automático" },
   ];
   return (
     <div className="rounded-3xl bg-brand-900 p-6 sm:p-10">
@@ -35,7 +35,7 @@ function MonitoringVisual() {
 
 function ChatVisual() {
   return (
-    <div className="rounded-3xl bg-brand-600 p-6 sm:p-10">
+    <div className="rounded-3xl bg-jade-700 p-6 sm:p-10">
       <div className="mx-auto max-w-sm space-y-3">
         <div className="flex items-center gap-2 text-sm font-bold text-white">
           <MessageCircle className="size-5" aria-hidden />
@@ -44,7 +44,7 @@ function ChatVisual() {
         <p className="w-fit max-w-[85%] rounded-2xl rounded-tl-sm bg-white px-4 py-3 text-sm text-ink">
           Olá! Quero saber se consigo registrar a marca da minha cafeteria.
         </p>
-        <p className="ml-auto w-fit max-w-[85%] rounded-2xl rounded-tr-sm bg-black px-4 py-3 text-sm text-white">
+        <p className="ml-auto w-fit max-w-[85%] rounded-2xl rounded-tr-sm bg-black/30 px-4 py-3 text-sm text-white">
           Claro! Já fizemos a busca: o nome está disponível na classe 43. Podemos protocolar hoje mesmo.
           <CheckCheck className="ml-2 inline size-4 text-gold" aria-hidden />
         </p>
@@ -84,7 +84,7 @@ export function Showcase() {
               <ul className="mt-6 space-y-3">
                 {block.points.map((point) => (
                   <li key={point} className="flex items-center gap-3 text-fg">
-                    <Check className="size-4 shrink-0 text-accent" aria-hidden />
+                    <Check className="size-4 shrink-0 text-jade-600" aria-hidden />
                     {point}
                   </li>
                 ))}

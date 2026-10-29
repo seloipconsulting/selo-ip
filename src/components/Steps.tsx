@@ -2,6 +2,7 @@ import { BadgeCheck, FileCheck, Search } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 import { SectionHeading } from "./ui/SectionHeading";
 import { WhatsAppButton } from "./ui/WhatsAppButton";
+import { toneCycle, tones } from "./ui/tones";
 
 const steps = [
   {
@@ -34,10 +35,10 @@ export function Steps() {
           {steps.map(({ icon: Icon, title, description }, i) => (
             <Reveal key={title} delay={i * 0.1} as="li" className="rounded-2xl bg-panel p-8">
               <div className="flex items-center justify-between">
-                <span className="flex size-12 items-center justify-center rounded-xl bg-brand-600 text-white">
+                <span className={`flex size-12 items-center justify-center rounded-xl text-white ${tones[toneCycle[i % 3]].line}`}>
                   <Icon className="size-6" aria-hidden />
                 </span>
-                <span className="text-sm font-bold tracking-wider text-accent uppercase">Etapa {i + 1}</span>
+                <span className="text-sm font-bold tracking-wider text-fog uppercase">Etapa {i + 1}</span>
               </div>
               <h3 className="mt-6 text-xl font-bold text-fg">{title}</h3>
               <p className="mt-2 leading-relaxed text-fog">{description}</p>

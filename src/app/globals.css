@@ -3,7 +3,8 @@
 /*
  * Paleta da marca — altere apenas estes tokens para trocar as cores do site.
  * Cada token vira classes utilitárias: bg-brand-600, text-accent, bg-gold etc.
- * Base: fundo branco, roxo-uva #8226B5 nos destaques e dourado de selo nas etiquetas.
+ * Base: fundo branco, roxo-uva #8226B5 como cor principal, verde-jade nos números e confirmações,
+ * dourado de selo nas etiquetas e azul-petróleo como cor de apoio.
  */
 @theme {
   --color-brand-50: #faf5fd;
@@ -18,9 +19,21 @@
   --color-brand-900: #3a1052;
   --color-brand-950: #1f0a2c;
 
-  /* Dourado de selo para etiquetas e destaques pequenos (sempre com texto escuro) */
+  /* Cores de apoio: cada uma tem um tom forte e um fundo suave */
+  --color-jade-50: #e8f6f0;
+  --color-jade-100: #cdebdf;
+  --color-jade-600: #0f8a66;
+  --color-jade-700: #0b6e51;
+
+  --color-petrol-50: #e7f1f5;
+  --color-petrol-100: #cde2ea;
+  --color-petrol-600: #1f6f8b;
+  --color-petrol-700: #18586f;
+
+  /* Dourado de selo para etiquetas (sempre com texto escuro) */
   --color-gold: #f5b82e;
   --color-gold-soft: #fdf1d4;
+  --color-gold-700: #8a5d00;
 
   /* Superfícies e textos */
   --color-canvas: #ffffff;

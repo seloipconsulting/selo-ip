@@ -1,6 +1,7 @@
 import { Copyright, Gavel, Lightbulb, PenTool, Radar, Search } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 import { SectionHeading } from "./ui/SectionHeading";
+import { toneCycle, tones } from "./ui/tones";
 
 const services = [
   {
@@ -48,7 +49,7 @@ export function Services() {
           {services.map(({ icon: Icon, title, description }, i) => (
             <Reveal key={title} delay={(i % 3) * 0.08}>
               <article className="group h-full rounded-2xl bg-panel p-7 ring-1 ring-transparent transition-all duration-300 hover:-translate-y-1 hover:ring-brand-300">
-                <span className="flex size-12 items-center justify-center rounded-xl bg-tile text-accent transition-colors group-hover:bg-brand-600 group-hover:text-white">
+                <span className={`flex size-12 items-center justify-center rounded-xl transition-transform group-hover:scale-110 ${tones[toneCycle[i % 3]].tile}`}>
                   <Icon className="size-6" aria-hidden />
                 </span>
                 <h3 className="mt-5 text-lg font-bold text-fg">{title}</h3>

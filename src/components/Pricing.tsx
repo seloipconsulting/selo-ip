@@ -38,7 +38,7 @@ export function Pricing() {
                   <ul className="mt-6 flex-1 space-y-3">
                     {plan.features.map((feature) => (
                       <li key={feature} className="flex items-start gap-3 text-[15px] text-fg">
-                        <Check className="mt-0.5 size-4 shrink-0 text-accent" aria-hidden />
+                        <Check className="mt-0.5 size-4 shrink-0 text-jade-600" aria-hidden />
                         {feature}
                       </li>
                     ))}

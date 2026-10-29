@@ -25,7 +25,7 @@ export function Hero() {
           <ul className="mt-8 space-y-3">
             {highlights.map((item) => (
               <li key={item} className="flex items-start gap-3 text-[17px] text-fg">
-                <Check className="mt-1 size-4 shrink-0 text-accent" aria-hidden />
+                <Check className="mt-1 size-4 shrink-0 text-jade-600" aria-hidden />
                 {item}
               </li>
             ))}
