@@ -23,7 +23,7 @@ const steps = [
 
 export function Steps() {
   return (
-    <section id="como-funciona" className="scroll-mt-48 bg-canvas py-20 sm:py-28">
+    <section id="como-funciona" className="scroll-mt-24 bg-canvas py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <SectionHeading
           title="Registre sua marca em 3 passos"
@@ -37,7 +37,7 @@ export function Steps() {
                 <span className="flex size-12 items-center justify-center rounded-xl bg-brand-600 text-white">
                   <Icon className="size-6" aria-hidden />
                 </span>
-                <span className="text-5xl font-normal text-brand-900">{i + 1}</span>
+                <span className="text-sm font-bold tracking-wider text-accent uppercase">Etapa {i + 1}</span>
               </div>
               <h3 className="mt-6 text-xl font-bold text-fg">{title}</h3>
               <p className="mt-2 leading-relaxed text-fog">{description}</p>

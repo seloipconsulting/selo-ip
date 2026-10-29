@@ -37,17 +37,17 @@ const services = [
 
 export function Services() {
   return (
-    <section id="servicos" className="scroll-mt-48 bg-canvas py-20 sm:py-28">
+    <section id="servicos" className="scroll-mt-24 bg-canvas py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <SectionHeading
-          title="Proteja qualquer criação"
+          title="Do nome ao invento: protegemos o que você criou"
           description="Do nome da empresa à sua invenção, cuidamos de toda a propriedade intelectual."
         />
 
         <div className="mx-auto mt-14 grid max-w-6xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.map(({ icon: Icon, title, description }, i) => (
             <Reveal key={title} delay={(i % 3) * 0.08}>
-              <article className="group h-full rounded-2xl bg-panel p-7 ring-1 ring-transparent transition-all duration-300 hover:-translate-y-1 hover:ring-brand-600">
+              <article className="group h-full rounded-2xl bg-panel p-7 ring-1 ring-transparent transition-all duration-300 hover:-translate-y-1 hover:ring-brand-300">
                 <span className="flex size-12 items-center justify-center rounded-xl bg-tile text-accent transition-colors group-hover:bg-brand-600 group-hover:text-white">
                   <Icon className="size-6" aria-hidden />
                 </span>

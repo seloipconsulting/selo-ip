@@ -8,13 +8,7 @@ export const site = {
   email: "seloipconsulting@gmail.com",
   phone: "(21) 97511-6004",
   address: "Rio de Janeiro, RJ — atendimento em todo o Brasil",
-  marquee: [
-    "Busca de viabilidade grátis",
-    "Especialistas em INPI",
-    "Atendimento pelo WhatsApp",
-    "Proteja sua marca hoje",
-    "Acompanhamento até o certificado",
-  ],
+  promo: "Busca de viabilidade de marca gratuita, sem compromisso.",
   whatsapp: {
     // Número no formato internacional, só dígitos (55 + DDD + número).
     number: "5521975116004",
@@ -36,7 +30,7 @@ export const navLinks = [
   { label: "Planos", href: "#planos" },
   { label: "Serviços", href: "#servicos" },
   { label: "Como funciona", href: "#como-funciona" },
-  { label: "Perguntas frequentes", href: "#faq" },
+  { label: "Dúvidas", href: "#faq" },
 ];
 
 export const plans = [
@@ -51,7 +45,6 @@ export const plans = [
       "Suporte pelo WhatsApp",
     ],
     featured: false,
-    badge: "Primeira marca",
   },
   {
     name: "Proteção Total",
@@ -65,7 +58,6 @@ export const plans = [
       "Especialista dedicado",
     ],
     featured: true,
-    badge: "Mais escolhido",
   },
   {
     name: "Patentes",
@@ -78,6 +70,5 @@ export const plans = [
       "Acompanhamento até a concessão",
     ],
     featured: false,
-    badge: "Para inventores",
   },
 ];

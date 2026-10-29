@@ -28,7 +28,7 @@ export function LegalPage({ title, updated, children }: Props) {
         </div>
       </header>
       <main className="mx-auto max-w-3xl px-4 py-14 sm:px-6 sm:py-20">
-        <h1 className="text-4xl leading-tight font-normal tracking-tight text-balance text-fg sm:text-5xl">{title}</h1>
+        <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-balance text-fg sm:text-4xl">{title}</h1>
         <p className="mt-3 text-sm text-fog">Última atualização: {updated}</p>
         <div className="mt-10 space-y-8 text-[17px] leading-relaxed text-fog [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-fg [&_li]:mt-2 [&_p]:mt-3 [&_strong]:text-fg [&_ul]:mt-3 [&_ul]:list-disc [&_ul]:pl-6">
           {children}

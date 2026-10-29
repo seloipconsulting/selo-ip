@@ -1,12 +1,11 @@
 import { FAQ } from "@/components/FAQ";
 import { FinalCTA } from "@/components/FinalCTA";
-import { FloatingAsk } from "@/components/FloatingAsk";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
-import { Marquee } from "@/components/Marquee";
 import { Navbar } from "@/components/Navbar";
 import { Pricing } from "@/components/Pricing";
-import { SectionTabs } from "@/components/SectionTabs";
+import { PromoBar } from "@/components/PromoBar";
 import { Services } from "@/components/Services";
 import { Showcase } from "@/components/Showcase";
 import { Stats } from "@/components/Stats";
@@ -15,11 +14,10 @@ import { Steps } from "@/components/Steps";
 export default function Home() {
   return (
     <>
-      <Marquee />
+      <PromoBar />
       <Navbar />
       <main>
         <Hero />
-        <SectionTabs />
         <Pricing />
         <Services />
         <Stats />
@@ -29,7 +27,7 @@ export default function Home() {
         <FinalCTA />
       </main>
       <Footer />
-      <FloatingAsk />
+      <FloatingWhatsApp />
     </>
   );
 }

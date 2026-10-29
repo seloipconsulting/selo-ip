@@ -4,8 +4,8 @@ import { WhatsAppButton } from "./ui/WhatsAppButton";
 
 function MonitoringVisual() {
   const alerts = [
-    { icon: TriangleAlert, tone: "text-coral bg-coral/15", title: "Pedido parecido detectado", meta: "Revista do INPI · Classe 35" },
-    { icon: Check, tone: "text-mint bg-mint/15", title: "Oposição protocolada", meta: "Dentro do prazo legal" },
+    { icon: TriangleAlert, tone: "text-brand-800 bg-gold-soft", title: "Pedido parecido detectado", meta: "Revista do INPI · Classe 35" },
+    { icon: Check, tone: "text-brand-600 bg-brand-100", title: "Oposição protocolada", meta: "Dentro do prazo legal" },
     { icon: Bell, tone: "text-accent bg-brand-600/20", title: "Renovação em 9 meses", meta: "Lembrete automático" },
   ];
   return (
@@ -17,7 +17,7 @@ function MonitoringVisual() {
         </div>
         <ul className="mt-5 space-y-3">
           {alerts.map(({ icon: Icon, tone, title, meta }) => (
-            <li key={title} className="flex items-center gap-3 rounded-xl bg-panel-inset p-3">
+            <li key={title} className="flex items-center gap-3 rounded-xl bg-panel p-3">
               <span className={`flex size-10 shrink-0 items-center justify-center rounded-lg ${tone}`}>
                 <Icon className="size-5" aria-hidden />
               </span>
@@ -46,7 +46,7 @@ function ChatVisual() {
         </p>
         <p className="ml-auto w-fit max-w-[85%] rounded-2xl rounded-tr-sm bg-black px-4 py-3 text-sm text-white">
           Claro! Já fizemos a busca: o nome está disponível na classe 43. Podemos protocolar hoje mesmo.
-          <CheckCheck className="ml-2 inline size-4 text-lavender" aria-hidden />
+          <CheckCheck className="ml-2 inline size-4 text-gold" aria-hidden />
         </p>
         <p className="w-fit max-w-[85%] rounded-2xl rounded-tl-sm bg-white px-4 py-3 text-sm text-ink">Perfeito, vamos fazer!</p>
       </div>
@@ -79,12 +79,12 @@ export function Showcase() {
           <div key={block.title} className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
             <Reveal className={`min-w-0 ${i % 2 === 1 ? "lg:order-2" : ""}`}>{block.visual}</Reveal>
             <Reveal delay={0.1} className="min-w-0">
-              <h2 className="text-4xl leading-[1.15] font-normal tracking-tight text-balance text-fg">{block.title}</h2>
+              <h2 className="text-3xl leading-[1.15] font-extrabold tracking-tight text-balance text-fg sm:text-4xl">{block.title}</h2>
               <p className="mt-4 text-lg leading-relaxed text-fog">{block.description}</p>
               <ul className="mt-6 space-y-3">
                 {block.points.map((point) => (
                   <li key={point} className="flex items-center gap-3 text-fg">
-                    <Check className="size-4 shrink-0 text-mint" aria-hidden />
+                    <Check className="size-4 shrink-0 text-accent" aria-hidden />
                     {point}
                   </li>
                 ))}

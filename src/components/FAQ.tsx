@@ -43,7 +43,7 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="scroll-mt-48 bg-paper py-20 sm:py-28">
+    <section id="faq" className="scroll-mt-24 bg-paper py-20 sm:py-28">
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <SectionHeading
           tone="light"

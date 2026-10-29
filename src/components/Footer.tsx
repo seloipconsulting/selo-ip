@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
 import { legalLinks } from "@/lib/legal";
 import { site, whatsappLink } from "@/lib/site";
 import { PaymentMethods } from "./PaymentMethods";
@@ -25,7 +24,7 @@ const columns = [
     links: [
       { label: "Planos", href: "/#planos" },
       { label: "Como funciona", href: "/#como-funciona" },
-      { label: "Perguntas frequentes", href: "/#faq" },
+      { label: "Dúvidas frequentes", href: "/#faq" },
     ],
   },
   {
@@ -44,15 +43,7 @@ export async function Footer() {
   return (
     <footer className="bg-paper text-ink">
       <div className="mx-auto max-w-6xl px-4 pt-14 pb-28 sm:px-6">
-        <nav aria-label="Você está em" className="flex items-center gap-1.5 text-sm">
-          <Link href="/" className="hover:underline">
-            {site.name}
-          </Link>
-          <ChevronRight className="size-3.5" aria-hidden />
-          <span>Registro de marcas e patentes</span>
-        </nav>
-
-        <div className="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-3">
               <Logo size={48} />

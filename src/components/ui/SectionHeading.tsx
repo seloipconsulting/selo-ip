@@ -11,7 +11,7 @@ export function SectionHeading({ title, description, tone = "dark" }: Props) {
   return (
     <Reveal className="mx-auto max-w-3xl text-center">
       <h2
-        className={`text-4xl leading-[1.15] font-normal tracking-tight text-balance sm:text-5xl ${light ? "text-ink" : "text-fg"}`}
+        className={`text-3xl leading-[1.15] font-extrabold tracking-tight text-balance sm:text-4xl ${light ? "text-ink" : "text-fg"}`}
       >
         {title}
       </h2>

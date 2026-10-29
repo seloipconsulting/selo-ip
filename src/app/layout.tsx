@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import { MotionConfig } from "framer-motion";
 import { site } from "@/lib/site";
 import "./globals.css";
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
 });
 
@@ -29,7 +29,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="pt-BR" className={`${dmSans.variable} h-full antialiased`}>
+    <html lang="pt-BR" className={`${jakarta.variable} h-full antialiased`}>
       <body className="min-h-full font-sans">
         <MotionConfig reducedMotion="user">{children}</MotionConfig>
       </body>
