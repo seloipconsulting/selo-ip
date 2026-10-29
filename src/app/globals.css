@@ -1,26 +1,80 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+ * Paleta da marca — altere apenas estes tokens para trocar as cores do site.
+ * Cada token vira classes utilitárias: bg-canvas, text-accent, bg-coral etc.
+ * Base: fundo branco com cards cinza-claro, roxo #673DE6 nos destaques, coral nos selos e verde nos números.
+ */
+@theme {
+  --color-brand-300: #9d99ff;
+  --color-brand-400: #8370ff;
+  --color-brand-500: #7b66ff;
+  --color-brand-600: #673de6;
+  --color-brand-700: #5025d1;
+  --color-brand-800: #45209c;
+  --color-brand-900: #2d1b61;
+  --color-brand-950: #100d29;
+  --color-brand-glow: #211459;
+
+  --color-lavender: #9d99ff;
+  --color-coral: #ff4646;
+  --color-mint: #00a37a;
+
+  /* Superfícies e textos (tema claro) */
+  --color-canvas: #ffffff;
+  --color-canvas-alt: #f4f0ff;
+  --color-glow: #e2d8ff;
+  --color-fg: #1d1e20;
+  --color-fog: #5a5d6a;
+  --color-accent: #673de6;
+  --color-tile: #ebe4ff;
+  --color-contrast: #1d1e20;
+  --color-on-contrast: #ffffff;
+  --color-panel: #f5f5f7;
+  --color-panel-raised: #f1ecff;
+  --color-panel-inset: #ffffff;
+  --color-pill: #ffffff;
+  --color-edge: #e3e3e8;
+
+  /* Superfícies claras (FAQ e rodapé) */
+  --color-paper: #f5f5f6;
+  --color-ink: #1d1e20;
+  --color-ink-muted: #5a5d6a;
+  --color-rule: #dcdce0;
+
+  --color-whatsapp: #22c55e;
+
+  --font-sans: var(--font-dm-sans);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-canvas);
+  color: var(--color-fg);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee {
+    animation: none;
+  }
 }
